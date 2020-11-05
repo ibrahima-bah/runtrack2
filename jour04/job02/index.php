@@ -4,17 +4,37 @@
 		<title>formulaire</title>
 	</head>
 	<body>
-		<form action="" method="GET" >
-			<label for="">Nom:</label>
-			<input type="text" name="nom" value="BAH">
-			<label for="">Prenom:</label>
-			<input type="text" name="Prenom" value=" IBRAHIMA">
-			<label for="">Password:</label>
-			<input type="email" name="nom" value="hj@i.fr">
-			<input type="password" name="password">
-			<input type="submit" value="Confirmer">
-			
-		</form>
+		<form method="POST" action="">
+    		<table border>
+        	<!-- première ligne du tableau-->
+				<thead>
+					<tr>
+						<th>Argument</th>
+						<th>Valeur</th>
+				
+					</tr>
+				</thead>
+				<tbody> <!-- Corps du tableau -->
+			    	<tr>
+				   		<td><label for="Nom">Nom</label></td>
+				   		<td><input type="text" name="Nom" value="BAH" size="10" maxlength="10" autofocus/></td>
+				   		
+					</tr>
+					<tr>
+				   		<td><label for="Prenom">Prenom</label></td>
+				   		<td><input type="text" name="Prenom" value="IBRAHIMA" size="10" maxlength="10"  autofocus/></td>
+					</tr>
+					<tr>
+				   		<td><label for="password">Password</label></td>
+				   		<td><input type="text" name="password" value="12345" size="10" maxlength="10"  autofocus/></td>
+					</tr>
+					<tr>
+				   		<td><label for="email">Email</label></td>
+				   		<td><input type="text" name="email" value="info@st.fr" size="10" maxlength="10"  autofocus/></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>		
 	</body>
 </html>
 
@@ -22,9 +42,7 @@
 
 <?php 
 
-if (isset($_GET['nom'])) {
-	echo "bonjour" . $_GET['nom'];
-}
+
 
 
  ?>
