@@ -1,16 +1,45 @@
-<?php 
-	$str= "I'm sorry Dave I'm afraid I can'tdo that";
-	$voyelle = "aeiouyAEIOUY";
-
-	for ($i=0; isset($str[$i]) ; $i++) {
-		for ($j=0; isset($voyelle[$j]) ; $j++) { 
-			if ($str[$i] == $voyelle[$j]) {
-				echo $str[$i];
-				
-			}
+<?php
+	$ma_chaine = "On n est pas le meilleur quand on le croit mais quand on le sait";
+	$dic = array($voyelles =>'' ,$consonne =>'' );
+	$voyelles = "aeouiy";
+	$consonne = "bcdfghjklmnpqrstvwxz ";
+	$nbr_voyelles = 0;
+	$nbr_consonne = 0;
+	$j = 0;
+	$i = 0;
+	do {
+		if (strpos($voyelles, strtolower($ma_chaine[$i])) !== false) {
+			$nbr_voyelles++;
 		}
-		
-	} 
-print_r(array_count_values($str))	;	
-		
+		$i++;
+		} while ($i < strlen($ma_chaine));
+	
+	do {
+		if (strpos($consonne, strtolower($ma_chaine[$j])) !== false) {
+			$nbr_consonne++;
+		}
+		$j++;
+		} while ($j < strlen($ma_chaine));
+	
+
+
 ?>
+<table border>
+				<thead>
+					<tr>
+						<th>consonne</th>
+						<th>voyelles</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><?php echo $nbr_consonne .'<br/>';  ?></td>
+						<td><?php echo $nbr_voyelles .'<br/>'; ?></td>
+						
+					</tr>
+					
+			
+				</tbody>
+
+			</table>		

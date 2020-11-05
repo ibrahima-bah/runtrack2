@@ -6,7 +6,7 @@
 	echo $str1[3] ." ";
 	echo $str1[6] ." ";
 	echo $str1[9] ." ";
-	echo $str1[12] ." ";
+	echo $str1[10] ." ";
 	
 
 
