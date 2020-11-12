@@ -1,10 +1,21 @@
+<?php 
+
+	echo $_POST['nom'];
+	echo $_POST['Prenom'];
+	echo $_POST['email'];
+	echo $_POST['password'];
+
+
+?> 
+
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<title>formulaire</title>
 	</head>
 	<body>
-		<form method="GET" action="index.php">
+		<form method="POST" action="index.php">
     		<table border>
         	<!-- première ligne du tableau-->
 				<thead>
@@ -37,15 +48,3 @@
 		</form>		
 	</body>
 </html>
-
-
-
-<?php 
-
-	echo $_GET['Nom'];
-	echo $_GET['Prenom'];
-	echo $_GET['email'];
-	echo $_GET['password'];
-
-
- ?>

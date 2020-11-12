@@ -1,0 +1,1 @@
+SELECT * FROM `etudiants` WHERE naissance BETWEEN '1989-01-02' AND '1999-12-31';
