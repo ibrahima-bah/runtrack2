@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	padding: 0;
+	background:url(images/fond_jaune.png);
+	background-size: cover;
+	font-family: 'Crete Round', serif;
+}
+
+form{
+	width: 100%;
+	max-width: 700px;
+	background:#f1f1f1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding:30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #000000b3;
+
+}
+li{
+	list-style: none;	
+}
+label {
+ margin-top:10px;
+ display:block;
+ font-family: 'Crete Round', serif;
+ }
+ select {
+ font-family: 'Crete Round', serif;
+ display:block;
+ }
+ option {
+ color:#F2d3d9;
+ font-weight:bold
+ }
+ input {
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+ select{
+ padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ margin-top: 10px;
+ margin-left: 190px;
+}
+input:hover,button:hover {
+ background-color:#C0C0C0;
+ }
+input:active{
+ background-color:#F2d3d9;
+ box-shadow:1px 1px 1px #D83F3D inset;
+}
+select:hover {
+ background-color:#F2d3d9;
+ }
+ button{
+ 	text-transform: uppercase;
+ 	margin-top: 20px;
+ 	display: inline-block;
+ 	border-radius: 8px;
+ 	font-family: 'Crete Round', serif;
+ }
