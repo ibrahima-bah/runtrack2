@@ -23,7 +23,7 @@
 	</table>
 </body>
 </html>-->
-//---code a voir car non fait par moi il me servira d'inspiration */
+<!---code a voir car non fait par moi il me servira d'inspiration */-->
 
 
 <?php

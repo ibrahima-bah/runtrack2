@@ -24,7 +24,7 @@
                  function gras ($str){
                   $str = $_POST['str'];
                   if (isset($_POST['str']) AND isset($_POST['fonction']) AND $_POST['fonction'] == "gras") {
-                    echo ucwords('<b>.$str</b>');
+                    echo ucwords($str);
                     
                   }
                 
